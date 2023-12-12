@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import localFont from 'next/dist/compiled/@next/font/dist/local'
+import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
 
 const headingFont = localFont({
-  src: '../../public/fonts/font.woff2'
+  src: '../public/fonts/font.woff2'
 })
 
-const logo = () => {
+const Logo = () => {
   return (
     <Link href="/">
       <div className='hover:opacity-75 transition items-center gap-x-2 hidden md:flex'>
@@ -18,4 +18,4 @@ const logo = () => {
   )
 }
 
-export default logo
+export default Logo
